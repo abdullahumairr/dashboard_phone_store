@@ -7,14 +7,12 @@ function NotFound() {
   return (
     <div className="min-h-screen bg-purple-900 flex items-center justify-center p-4">
       <div className="text-center">
-        {/* 404 Animation */}
         <div className="mb-8">
           <h1 className="text-[150px] md:text-[200px] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-pulse leading-none">
             404
           </h1>
         </div>
 
-        {/* Message */}
         <div className="space-y-4 mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Halaman Tidak Ditemukan
@@ -24,7 +22,6 @@ function NotFound() {
           </p>
         </div>
 
-        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => navigate(-1)}
@@ -46,7 +43,7 @@ function NotFound() {
           </button>
         </div>
 
-        {/* Decorative Elements */}
+
         <div className="mt-16 flex justify-center gap-2">
           <div
             className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"

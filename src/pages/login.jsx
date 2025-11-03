@@ -32,7 +32,6 @@ function Login() {
 
   const onSubmit = (data) => {
     console.log(data);
-    // Simulate login success
     navigate('/dashboard/user');
   };
 

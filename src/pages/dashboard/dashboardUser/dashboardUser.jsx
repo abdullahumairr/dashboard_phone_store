@@ -65,7 +65,7 @@ export default function DashboardUser() {
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-xl p-6">
+          <div className="border-2 rounded-xl p-6">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-blue-600 text-sm font-medium">Total Users</p>
@@ -79,7 +79,7 @@ export default function DashboardUser() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-xl p-6">
+          <div className="border-2 rounded-xl p-6">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-purple-600 text-sm font-medium">
@@ -90,12 +90,12 @@ export default function DashboardUser() {
                 </p>
               </div>
               <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
+                <span className="text-white font-bold text-lg"> A</span>
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-xl p-6">
+          <div className="border-2 rounded-xl p-6">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-green-600 text-sm font-medium">
