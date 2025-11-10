@@ -36,7 +36,7 @@ export default function DashboardUser() {
   return (
     <LayoutDashboard>
       <div className="space-y-6">
-        {/* Header Section */}
+        {/* header section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <h1 className="text-3xl font-bold text-slate-800 flex items-center gap-3">
@@ -63,7 +63,7 @@ export default function DashboardUser() {
           </div>
         </div>
 
-        {/* Stats Cards */}
+        {/* total */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="border-2 rounded-xl p-6">
             <div className="flex items-center justify-between">
@@ -112,7 +112,7 @@ export default function DashboardUser() {
           </div>
         </div>
 
-        {/* Data Table */}
+        {/* data table */}
         <div className="bg-white rounded-xl border border-slate-200 p-6">
           {loading ? (
             <div className="flex items-center justify-center py-12">

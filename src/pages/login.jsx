@@ -20,7 +20,7 @@ const loginSchema = z.object({
 
 function Login() {
   const navigate = useNavigate();
-  
+
   const {
     register,
     handleSubmit,
@@ -32,21 +32,15 @@ function Login() {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate('/dashboard/user');
+    navigate("/dashboard/user");
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 flex items-center justify-center p-4">
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="w-full max-w-md relative">
-        {/* Main Card */}
+        {/* login card */}
         <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
-          {/* Logo Section */}
+          {/* logo */}
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl mb-4 shadow-lg">
               <Smartphone className="text-white" size={32} />
@@ -54,18 +48,23 @@ function Login() {
             <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Phone Store
             </h1>
-            <p className="text-slate-600 mt-2">Welcome back! Please login to continue</p>
+            <p className="text-slate-600 mt-2">
+              Welcome back! Please login to continue
+            </p>
           </div>
 
-          {/* Form */}
+          {/* form */}
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-            {/* Username / Email */}
+            {/* username / email */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Username / Email
               </label>
               <div className="relative">
-                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />
+                <Mail
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  size={20}
+                />
                 <input
                   type="text"
                   {...register("identifier")}
@@ -81,13 +80,16 @@ function Login() {
               )}
             </div>
 
-            {/* Password */}
+            {/* password */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Password
               </label>
               <div className="relative">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={20} />
+                <Lock
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"
+                  size={20}
+                />
                 <input
                   type="password"
                   {...register("password")}
@@ -103,18 +105,24 @@ function Login() {
               )}
             </div>
 
-            {/* Remember & Forgot */}
+            {/* remember & fforgot */}
             <div className="flex items-center justify-between text-sm">
               <label className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" className="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500" />
+                <input
+                  type="checkbox"
+                  className="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+                />
                 <span className="text-slate-600">Remember me</span>
               </label>
-              <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">
+              <a
+                href="#"
+                className="text-blue-600 hover:text-blue-700 font-medium"
+              >
                 Forgot password?
               </a>
             </div>
 
-            {/* Login Button */}
+            {/* login button */}
             <button
               type="submit"
               className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2"
@@ -124,14 +132,13 @@ function Login() {
             </button>
           </form>
 
-          {/* Divider */}
           <div className="flex items-center gap-4 my-6">
             <div className="flex-1 h-px bg-slate-200"></div>
             <span className="text-slate-400 text-sm">or</span>
             <div className="flex-1 h-px bg-slate-200"></div>
           </div>
 
-          {/* Register Link */}
+          {/* register link */}
           <p className="text-center text-slate-600">
             Don't have an account?{" "}
             <Link
@@ -142,11 +149,6 @@ function Login() {
             </Link>
           </p>
         </div>
-
-        {/* Footer Text */}
-        <p className="text-center text-white/80 text-sm mt-6">
-          © 2025 Phone Store. All rights reserved.
-        </p>
       </div>
     </div>
   );

@@ -55,14 +55,8 @@ function Register() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 flex items-center justify-center p-4">
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="w-full max-w-lg relative">
-        {/* Back Button */}
+        {/* back */}
         <Link
           to="/"
           className="inline-flex items-center gap-2 text-white/90 hover:text-white mb-4 transition-colors"
@@ -71,9 +65,9 @@ function Register() {
           <span className="font-medium">Back to Login</span>
         </Link>
 
-        {/* Main Card */}
+        {/* registr Card */}
         <div className="bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
-          {/* Header */}
+          {/* header */}
           <div className="text-center mb-6">
             <div className="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl mb-3 shadow-lg">
               <UserPlus className="text-white" size={28} />
@@ -87,7 +81,7 @@ function Register() {
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-            {/* Nama Lengkap */}
+            {/* fullname */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Full Name
@@ -111,7 +105,7 @@ function Register() {
               )}
             </div>
 
-            {/* Email */}
+            {/* email */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Email Address
@@ -135,7 +129,7 @@ function Register() {
               )}
             </div>
 
-            {/* Password */}
+            {/* password */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Password
@@ -159,7 +153,7 @@ function Register() {
               )}
             </div>
 
-            {/* Konfirmasi Password */}
+            {/* confirm password */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Confirm Password
@@ -183,7 +177,7 @@ function Register() {
               )}
             </div>
 
-            {/* Umur */}
+            {/* age */}
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-2">
                 Age
@@ -207,7 +201,7 @@ function Register() {
               )}
             </div>
 
-            {/* Register Button */}
+            {/* register button */}
             <button
               type="submit"
               className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-3 px-4 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 mt-6"
@@ -217,7 +211,7 @@ function Register() {
             </button>
           </form>
 
-          {/* Login Link */}
+          {/* login link */}
           <p className="mt-6 text-center text-slate-600 text-sm">
             Already have an account?{" "}
             <Link

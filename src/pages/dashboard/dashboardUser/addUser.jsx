@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -71,7 +70,7 @@ function AddUser() {
   return (
     <LayoutDashboard>
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+        {/* header */}
         <div className="mb-8">
           <button
             onClick={() => navigate("/dashboard/user")}
@@ -96,13 +95,12 @@ function AddUser() {
           </div>
         </div>
 
-        {/* Form Card */}
+        {/* form */}
         <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-lg border border-slate-200 p-8">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              {/* Grid Layout for Better Organization */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Nama Lengkap */}
+                {/* fullname */}
                 <FormField
                   control={form.control}
                   name="fullname"
@@ -123,7 +121,7 @@ function AddUser() {
                   )}
                 />
 
-                {/* Username */}
+                {/* username */}
                 <FormField
                   control={form.control}
                   name="username"
@@ -144,7 +142,7 @@ function AddUser() {
                   )}
                 />
 
-                {/* Email */}
+                {/* email */}
                 <FormField
                   control={form.control}
                   name="email"
@@ -166,7 +164,7 @@ function AddUser() {
                   )}
                 />
 
-                {/* Password */}
+                {/* password */}
                 <FormField
                   control={form.control}
                   name="password"
@@ -188,7 +186,7 @@ function AddUser() {
                   )}
                 />
 
-                {/* Nomor Telepon */}
+                {/* telephone number */}
                 <FormField
                   control={form.control}
                   name="phone_number"
@@ -209,7 +207,7 @@ function AddUser() {
                   )}
                 />
 
-                {/* Umur */}
+                {/* age */}
                 <FormField
                   control={form.control}
                   name="age"
@@ -232,7 +230,7 @@ function AddUser() {
                 />
               </div>
 
-              {/* Alamat - Full Width */}
+              {/* address */}
               <FormField
                 control={form.control}
                 name="address"
@@ -253,7 +251,7 @@ function AddUser() {
                 )}
               />
 
-              {/* Role Selection */}
+              {/* role */}
               <FormField
                 control={form.control}
                 name="role"

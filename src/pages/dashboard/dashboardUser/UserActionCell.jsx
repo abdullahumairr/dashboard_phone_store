@@ -29,7 +29,7 @@ export default function UserActionCell({ id }) {
 
   return (
     <div className="flex items-center gap-2">
-      {/* Button Info */}
+      {/* button infoo */}
       <button
         onClick={() => setDetailUserPopup(true)}
         className="p-2 hover:bg-blue-50 text-blue-600 rounded-lg transition-colors"
@@ -41,7 +41,7 @@ export default function UserActionCell({ id }) {
         <DetailUser id={id} setDetailUserPopup={setDetailUserPopup} />
       )}
 
-      {/* Button Edit */}
+      {/* buttton edit */}
       <button
         onClick={() => console.log("Edit user:", id)}
         className="p-2 hover:bg-green-50 text-green-600 rounded-lg transition-colors"
@@ -50,7 +50,7 @@ export default function UserActionCell({ id }) {
         <Pencil size={18} />
       </button>
 
-      {/* Button Delete */}
+      {/* button delete */}
       <AlertDialog>
         <AlertDialogTrigger asChild>
           <button

@@ -37,7 +37,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
       <div
         className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl"
       >
-        {/* Header */}
+        {/* header */}
         <div className="relative bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-6 rounded-t-2xl">
           <button
             className="absolute top-4 right-4 p-2 hover:bg-white/20 rounded-lg transition-colors cursor-pointer"
@@ -49,7 +49,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
           <p className="text-blue-100 text-sm mt-1">Informasi lengkap pengguna</p>
         </div>
 
-        {/* Content */}
+        {/* Ccontent */}
         <div className="p-8">
           {loading ? (
             <div className="flex flex-col items-center justify-center py-12">
@@ -58,7 +58,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
             </div>
           ) : user ? (
             <div className="space-y-4">
-              {/* Nama Lengkap */}
+              {/* fulnamer */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-blue-100 rounded-lg">
                   <User className="text-blue-600" size={20} />
@@ -69,7 +69,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
                 </div>
               </div>
 
-              {/* Username */}
+              {/* usdername */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-purple-100 rounded-lg">
                   <User className="text-purple-600" size={20} />
@@ -80,7 +80,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
                 </div>
               </div>
 
-              {/* Email */}
+              {/* email */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-green-100 rounded-lg">
                   <Mail className="text-green-600" size={20} />
@@ -91,7 +91,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
                 </div>
               </div>
 
-              {/* Nomor Telepon */}
+              {/* nomortelpon */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-orange-100 rounded-lg">
                   <Phone className="text-orange-600" size={20} />
@@ -113,7 +113,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
                 </div>
               </div>
 
-              {/* Alamat */}
+              {/* address */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-teal-100 rounded-lg">
                   <MapPin className="text-teal-600" size={20} />
@@ -124,7 +124,7 @@ export default function DetailUser({ id, setDetailUserPopup }) {
                 </div>
               </div>
 
-              {/* Role */}
+              {/* role */}
               <div className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
                 <div className="p-2 bg-indigo-100 rounded-lg">
                   <Shield className="text-indigo-600" size={20} />

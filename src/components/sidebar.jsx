@@ -33,7 +33,7 @@ function Sidebar() {
 
   return (
     <aside className="w-64 bg-gradient-to-b from-slate-900 to-slate-800 text-white flex flex-col shadow-2xl">
-      {/* Logo/Brand */}
+      {/* logo */}
       <div className="p-6 border-b border-slate-700">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -46,7 +46,7 @@ function Sidebar() {
         </div>
       </div>
 
-      {/* Navigation Menu */}
+      {/* navigation mmeunu */}
       <nav className="flex-1 p-4 space-y-2">
         {menuItems.map((item) => {
           const Icon = item.icon;
@@ -73,7 +73,7 @@ function Sidebar() {
         })}
       </nav>
 
-      {/* Logout Button */}
+      {/* logout button */}
       <div className="p-4 border-t border-slate-700">
         <button
           onClick={handleLogout}
